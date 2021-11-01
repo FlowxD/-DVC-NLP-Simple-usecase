@@ -1,10 +1,10 @@
-from src.utils.common import read_yaml, create_directories
-from src.utils.data_mgmt import process_posts
 import argparse
 import os
 import shutil
 from tqdm import tqdm
 import logging
+from src.utils.common import read_yaml, create_directories
+from src.utils.data_mgmt import process_posts
 import random
 
 
