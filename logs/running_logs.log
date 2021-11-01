@@ -85,3 +85,98 @@ TypeError: 'NoneType' object is not subscriptable
 [2021-11-01 20:47:07,970: INFO: stage_03_train]: Y matrix size or labels size: (19921,)
 [2021-11-01 20:47:13,606: INFO: stage_03_train]: >>>>> stage Three completed!<<<<<
 
+[2021-11-01 21:50:14,928: INFO: stage_04_evaluate]: 
+********************
+[2021-11-01 21:50:14,929: INFO: stage_04_evaluate]: >>>>> stage Four started <<<<<
+[2021-11-01 21:50:14,932: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-01 21:50:15,786: INFO: common]: json file saved at: scores.json
+[2021-11-01 21:50:15,867: INFO: common]: json file saved at: prc.json
+[2021-11-01 21:50:15,927: INFO: common]: json file saved at: roc.json
+[2021-11-01 21:50:15,931: INFO: stage_04_evaluate]: >>>>> stage Four completed!<<<<<
+
+[2021-11-01 21:50:45,448: INFO: stage_01_prepare]: 
+********************
+[2021-11-01 21:50:45,449: INFO: stage_01_prepare]: >>>>> stage One started <<<<<
+[2021-11-01 21:50:45,456: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-01 21:50:45,459: INFO: common]: yaml file: params.yaml loaded successfully
+[2021-11-01 21:50:45,460: INFO: common]: created directory at: artifacts\prepared
+[2021-11-01 21:50:56,932: INFO: stage_01_prepare]: >>>>> stage One completed!<<<<<
+
+[2021-11-01 21:51:05,395: INFO: stage_02_featurization]: 
+********************
+[2021-11-01 21:51:05,395: INFO: stage_02_featurization]: >>>>> stage Two started <<<<<
+[2021-11-01 21:51:05,398: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-01 21:51:05,401: INFO: common]: yaml file: params.yaml loaded successfully
+[2021-11-01 21:51:05,402: INFO: common]: created directory at: artifacts\features
+[2021-11-01 21:51:05,850: INFO: common]: The input data frame artifacts\prepared\train.tsv size is (19921, 3)
+
+[2021-11-01 21:51:06,930: ERROR: stage_02_featurization]: Unable to allocate 2.10 GiB for an array with shape (19921,) and data type <U28297
+Traceback (most recent call last):
+  File "src/stage_02_featurization.py", line 72, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/stage_02_featurization.py", line 40, in main
+    train_words = np.array(df_train.text.str.lower().values.astype("U"))
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 2.10 GiB for an array with shape (19921,) and data type <U28297
+[2021-11-01 21:54:04,602: INFO: stage_02_featurization]: 
+********************
+[2021-11-01 21:54:04,603: INFO: stage_02_featurization]: >>>>> stage Two started <<<<<
+[2021-11-01 21:54:04,607: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-01 21:54:04,611: INFO: common]: yaml file: params.yaml loaded successfully
+[2021-11-01 21:54:04,612: INFO: common]: created directory at: artifacts\features
+[2021-11-01 21:54:05,253: INFO: common]: The input data frame artifacts\prepared\train.tsv size is (19921, 3)
+
+[2021-11-01 21:54:06,245: ERROR: stage_02_featurization]: Unable to allocate 2.10 GiB for an array with shape (19921,) and data type <U28297
+Traceback (most recent call last):
+  File "d:\code\SIMPLE_NLP_USECASE\DVC-NLP-Simple-usecase\src\stage_02_featurization.py", line 72, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "d:\code\SIMPLE_NLP_USECASE\DVC-NLP-Simple-usecase\src\stage_02_featurization.py", line 40, in main
+    train_words = np.array(df_train.text.str.lower().values.astype("U"))
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 2.10 GiB for an array with shape (19921,) and data type <U28297
+[2021-11-01 21:56:51,473: INFO: stage_02_featurization]: 
+********************
+[2021-11-01 21:56:51,473: INFO: stage_02_featurization]: >>>>> stage Two started <<<<<
+[2021-11-01 21:56:51,477: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-01 21:56:51,480: INFO: common]: yaml file: params.yaml loaded successfully
+[2021-11-01 21:56:51,480: INFO: common]: created directory at: artifacts\features
+[2021-11-01 21:56:52,278: INFO: common]: The input data frame artifacts\prepared\train.tsv size is (19921, 3)
+
+[2021-11-01 21:57:40,592: INFO: featurize]: The ouput matrix artifacts\features\train.pkl of size (19921, 2002) and data type: float64
+[2021-11-01 21:57:41,314: INFO: common]: The input data frame artifacts\prepared\test.tsv size is (5079, 3)
+
+[2021-11-01 21:57:44,513: INFO: featurize]: The ouput matrix artifacts\features\test.pkl of size (5079, 2002) and data type: float64
+[2021-11-01 21:57:45,231: INFO: stage_02_featurization]: >>>>> stage Two completed!<<<<<
+
+[2021-11-01 22:02:02,928: INFO: stage_02_featurization]: 
+********************
+[2021-11-01 22:02:02,928: INFO: stage_02_featurization]: >>>>> stage Two started <<<<<
+[2021-11-01 22:02:02,932: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-01 22:02:02,934: INFO: common]: yaml file: params.yaml loaded successfully
+[2021-11-01 22:02:02,934: INFO: common]: created directory at: artifacts\features
+[2021-11-01 22:02:03,420: INFO: common]: The input data frame artifacts\prepared\train.tsv size is (19921, 3)
+
+[2021-11-01 22:02:51,675: INFO: featurize]: The ouput matrix artifacts\features\train.pkl of size (19921, 2002) and data type: float64
+[2021-11-01 22:02:51,910: INFO: common]: The input data frame artifacts\prepared\test.tsv size is (5079, 3)
+
+[2021-11-01 22:02:56,004: INFO: featurize]: The ouput matrix artifacts\features\test.pkl of size (5079, 2002) and data type: float64
+[2021-11-01 22:02:56,898: INFO: stage_02_featurization]: >>>>> stage Two completed!<<<<<
+
+[2021-11-01 22:02:59,780: INFO: stage_03_train]: 
+********************
+[2021-11-01 22:02:59,780: INFO: stage_03_train]: >>>>> stage Three started <<<<<
+[2021-11-01 22:02:59,783: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-01 22:02:59,786: INFO: common]: yaml file: params.yaml loaded successfully
+[2021-11-01 22:02:59,786: INFO: common]: created directory at: artifacts\model
+[2021-11-01 22:02:59,813: INFO: stage_03_train]: input matrix size: (19921, 2002)
+[2021-11-01 22:02:59,813: INFO: stage_03_train]: X matrix size: (19921, 2000)
+[2021-11-01 22:02:59,813: INFO: stage_03_train]: Y matrix size or labels size: (19921,)
+[2021-11-01 22:03:05,440: INFO: stage_03_train]: >>>>> stage Three completed!<<<<<
+
+[2021-11-01 22:03:08,354: INFO: stage_04_evaluate]: 
+********************
+[2021-11-01 22:03:08,354: INFO: stage_04_evaluate]: >>>>> stage Four started <<<<<
+[2021-11-01 22:03:08,357: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-01 22:03:08,713: INFO: common]: json file saved at: scores.json
+[2021-11-01 22:03:08,753: INFO: common]: json file saved at: prc.json
+[2021-11-01 22:03:08,773: INFO: common]: json file saved at: roc.json
+[2021-11-01 22:03:08,775: INFO: stage_04_evaluate]: >>>>> stage Four completed!<<<<<
+
