@@ -74,3 +74,14 @@ TypeError: 'NoneType' object is not subscriptable
 [2021-11-01 18:32:43,156: INFO: featurize]: The ouput matrix artifacts\features\test.pkl of size (5079, 2002) and data type: float64
 [2021-11-01 18:32:44,109: INFO: stage_02_featurization]: >>>>> stage Two completed!<<<<<
 
+[2021-11-01 20:47:07,848: INFO: stage_03_train]: 
+********************
+[2021-11-01 20:47:07,848: INFO: stage_03_train]: >>>>> stage Three started <<<<<
+[2021-11-01 20:47:07,860: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-01 20:47:07,865: INFO: common]: yaml file: params.yaml loaded successfully
+[2021-11-01 20:47:07,866: INFO: common]: created directory at: artifacts\model
+[2021-11-01 20:47:07,969: INFO: stage_03_train]: input matrix size: (19921, 2002)
+[2021-11-01 20:47:07,970: INFO: stage_03_train]: X matrix size: (19921, 2000)
+[2021-11-01 20:47:07,970: INFO: stage_03_train]: Y matrix size or labels size: (19921,)
+[2021-11-01 20:47:13,606: INFO: stage_03_train]: >>>>> stage Three completed!<<<<<
+
