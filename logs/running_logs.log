@@ -1,0 +1,62 @@
+[2021-11-01 14:08:03,533: INFO: stage_01_prepare]: 
+********************
+[2021-11-01 14:08:03,533: INFO: stage_01_prepare]: >>>>> stage One started <<<<<
+[2021-11-01 14:08:03,534: ERROR: stage_01_prepare]: name 'read_yaml' is not defined
+Traceback (most recent call last):
+  File "d:\code\SIMPLE_NLP_USECASE\DVC-NLP-Simple-usecase\src\stage_01_prepare.py", line 57, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "d:\code\SIMPLE_NLP_USECASE\DVC-NLP-Simple-usecase\src\stage_01_prepare.py", line 21, in main
+    config = read_yaml(config_path)
+NameError: name 'read_yaml' is not defined
+[2021-11-01 14:09:30,275: INFO: stage_01_prepare]: 
+********************
+[2021-11-01 14:09:30,277: INFO: stage_01_prepare]: >>>>> stage One started <<<<<
+[2021-11-01 14:09:30,277: ERROR: stage_01_prepare]: name 'read_yaml' is not defined
+Traceback (most recent call last):
+  File "d:\code\SIMPLE_NLP_USECASE\DVC-NLP-Simple-usecase\src\stage_01_prepare.py", line 56, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "d:\code\SIMPLE_NLP_USECASE\DVC-NLP-Simple-usecase\src\stage_01_prepare.py", line 20, in main
+    config = read_yaml(config_path)
+NameError: name 'read_yaml' is not defined
+[2021-11-01 14:09:31,704: INFO: stage_01_prepare]: 
+********************
+[2021-11-01 14:09:31,704: INFO: stage_01_prepare]: >>>>> stage One started <<<<<
+[2021-11-01 14:09:31,704: ERROR: stage_01_prepare]: name 'read_yaml' is not defined
+Traceback (most recent call last):
+  File "d:\code\SIMPLE_NLP_USECASE\DVC-NLP-Simple-usecase\src\stage_01_prepare.py", line 56, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "d:\code\SIMPLE_NLP_USECASE\DVC-NLP-Simple-usecase\src\stage_01_prepare.py", line 20, in main
+    config = read_yaml(config_path)
+NameError: name 'read_yaml' is not defined
+[2021-11-01 14:18:24,200: INFO: stage_01_prepare]: 
+********************
+[2021-11-01 14:18:24,201: INFO: stage_01_prepare]: >>>>> stage One started <<<<<
+[2021-11-01 14:18:24,203: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-01 14:18:24,203: INFO: common]: yaml file: params.yaml loaded successfully
+[2021-11-01 14:18:24,204: ERROR: stage_01_prepare]: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:\code\SIMPLE_NLP_USECASE\DVC-NLP-Simple-usecase\src\stage_01_prepare.py", line 59, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "d:\code\SIMPLE_NLP_USECASE\DVC-NLP-Simple-usecase\src\stage_01_prepare.py", line 29, in main
+    split = params["prepare"]["split"]
+TypeError: 'NoneType' object is not subscriptable
+[2021-11-01 14:19:05,907: INFO: stage_01_prepare]: 
+********************
+[2021-11-01 14:19:05,907: INFO: stage_01_prepare]: >>>>> stage One started <<<<<
+[2021-11-01 14:19:05,909: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-01 14:19:05,909: INFO: common]: yaml file: params.yaml loaded successfully
+[2021-11-01 14:19:05,909: ERROR: stage_01_prepare]: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "d:\code\SIMPLE_NLP_USECASE\DVC-NLP-Simple-usecase\src\stage_01_prepare.py", line 58, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "d:\code\SIMPLE_NLP_USECASE\DVC-NLP-Simple-usecase\src\stage_01_prepare.py", line 28, in main
+    split = params["prepare"]["split"]
+TypeError: 'NoneType' object is not subscriptable
+[2021-11-01 14:22:55,302: INFO: stage_01_prepare]: 
+********************
+[2021-11-01 14:22:55,302: INFO: stage_01_prepare]: >>>>> stage One started <<<<<
+[2021-11-01 14:22:55,304: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-01 14:22:55,311: INFO: common]: yaml file: params.yaml loaded successfully
+[2021-11-01 14:22:55,311: INFO: common]: created directory at: artifacts\prepared
+[2021-11-01 14:22:58,202: INFO: stage_01_prepare]: >>>>> stage One completed!<<<<<
+
