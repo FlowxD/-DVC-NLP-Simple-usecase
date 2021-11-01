@@ -60,3 +60,17 @@ TypeError: 'NoneType' object is not subscriptable
 [2021-11-01 14:22:55,311: INFO: common]: created directory at: artifacts\prepared
 [2021-11-01 14:22:58,202: INFO: stage_01_prepare]: >>>>> stage One completed!<<<<<
 
+[2021-11-01 18:31:46,733: INFO: stage_02_featurization]: 
+********************
+[2021-11-01 18:31:46,734: INFO: stage_02_featurization]: >>>>> stage Two started <<<<<
+[2021-11-01 18:31:46,740: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2021-11-01 18:31:46,744: INFO: common]: yaml file: params.yaml loaded successfully
+[2021-11-01 18:31:46,744: INFO: common]: created directory at: artifacts\features
+[2021-11-01 18:31:47,549: INFO: common]: The input data frame artifacts\prepared\train.tsv size is (19921, 3)
+
+[2021-11-01 18:32:36,544: INFO: featurize]: The ouput matrix artifacts\features\train.pkl of size (19921, 2002) and data type: float64
+[2021-11-01 18:32:38,227: INFO: common]: The input data frame artifacts\prepared\test.tsv size is (5079, 3)
+
+[2021-11-01 18:32:43,156: INFO: featurize]: The ouput matrix artifacts\features\test.pkl of size (5079, 2002) and data type: float64
+[2021-11-01 18:32:44,109: INFO: stage_02_featurization]: >>>>> stage Two completed!<<<<<
+
