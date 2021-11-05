@@ -6,7 +6,7 @@ DVC NLP project
 
 * [DVC STUDIO](https://studio.iterative.ai/)
 
-* [MY View](https://studio.iterative.ai/user/c17hawke/views/DVC-NLP-Simple-usecase-3xolnsi26a)
+* [MY View](https://studio.iterative.ai/user/FlowxD/views/DVC-NLP-Simple-usecase-h30g6w34wx)
 
 * [Bag of Words- Krish Naik](https://youtu.be/D2V1okCEsiE)
 
